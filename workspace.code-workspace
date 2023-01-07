@@ -1,0 +1,22 @@
+{
+    "folders": [
+		{
+			"path": "..\\attendance"
+		},
+		{
+			"path": "..\\Coursera"
+		},
+		{
+			"path": "..\\GROCERY-STORE-MANAGEMENT-SYSTEM-USING-PHP-AND-MYSQL-PHPMYADMIN--master (1)"
+		},
+		{
+			"path": "..\\project"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "livePreview.defaultPreviewPath": "c:\\xampp\\htdocs\\scdb\\Home.html"
+    }
+}

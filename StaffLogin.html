@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awsome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="Style.css">
+    <title>Staff Login</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="header">
+        <a href="./Home.html" class="logo">
+            <img src="./img/peakpx.jpeg" class="header-img" alt="emblumn of india">
+        </a>
+
+        <center>
+            <div class="header-left">
+                <div>
+                    <h1>Supreme Court of India</h1>
+                    <h3 class="headerhead-2">
+                        || यतो धर्मस्ततो जय: ||
+                    </h3>
+                </div>
+            </div>
+        </center>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="login.php" method="POST">
+                        <div class="imgcontainer">
+                            <img src="./img/SCimg1.jpeg" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label for="uname" style="margin-top: 30px;"></label><b>Username</b><br>
+                            <input type="text" placeholder="Enter Username" name="uname" required style="margin-top: 5px; width: 60%; border-radius: 4px;">
+                            <br>
+                            <label for="psw" style="margin-top: 5px;"><b>Password</b></label>
+                            <br>
+                            <input type="password" placeholder="Enter Password" name="psw" required style="margin-top: 5px; width: 60%; border-radius: 4px;">
+                            <br>
+                            <button class="btn btn-primary" type="submit" style="margin-top: 5px; border-radius: 4px; background-color: rgb(78, 78, 161); color: white;">Login</button>
+                            <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                            <br>
+                        </div>
+                        <div class="container">
+                            <span class="psw"> <a href="#">Forgot password?</a></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href=""><button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" style="margin-top: 5px; border-radius: 4px; background-color: rgb(78, 78, 161); color: white;">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Supreme Court Carousel-->
+
+    <div id="SCcarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#SCcarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#SCcarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#SCcarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#SCcarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#SCcarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/SCimg1.jpeg" class="d-block w-100" alt="Pic1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Scimg2.jpeg" class="d-block w-100" alt="Pic2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Scimg3.jpeg" class="d-block w-100" alt="Pic3">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Scimg4.jpeg" class="d-block w-100" alt="Pic4">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/Scimg5.jpeg" class="d-block w-100" alt="Pic5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#SCcarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true">
+
+                      </span>
+                      <span class="visually-hidden">
+                          Previous
+                      </span>
+            </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#SCcarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true">
+
+                      </span>
+                      <span class="visually-hidden">
+                          Next
+                      </span>
+            </button>
+    </div>
+
+
+
+    <!-- Nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             Menu<span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Home.html"><i class="fas fa-home">Home</i></a>
+                    </li>
+                </ul>
+                <li class="navbar-nav nav-item">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fas fa-sign-in-alt"> Login</i>
+                    </button>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Content -->
+
+    <div class="container">
+        <center>
+            <h3>DB Staff Log in</h3>
+            <p>The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India, the highest constitutional court, with the power of judicial review. Consisting of the Chief Justice of India and a maximum
+                of 30 other judges, it has extensive powers in the form of original, appellate and advisory jurisdictions.</p>
+
+            <p> As the final court of appeal of the country, it takes up appeals primarily against verdicts of the high courts of various states of the Union and other courts and tribunals. It safeguards fundamental rights of citizens and settles disputes
+                between various governments in the country. As an advisory court, it hears matters which may specifically be referred to it under the constitution by President of India. It also may take cognisance of matters on its own (or suo moto),
+                without anyone drawing its attention to them. The law declared by the supreme court becomes binding on all courts within India and also by the union and state governments.Per Article 142, it is the duty of the president to enforce the
+                decrees of the supreme court.
+            </p>
+        </center>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-6 col-sm-3 offset-sm-1 align-self-center ">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="./Home.html"><i class="fa fa-home"></i>Home</a>
+                        </li>
+                        <li><a href="./Contact.html "><i class="fas fa-id-card"></i>Contact</a></li>
+                        <li><a href="./History.html"><i class="fas fa-history"></i>History</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-7 offset-sm-1 1align-self-center ">
+                    <h5 id="footer-links ">Address</h5>
+                    <address class="address ">
+                        <strong><h3>Supreme Court of India</h3></strong>	 
+                        Tilak Marg,<br>        
+                         New Delhi-110001 (INDIA)<br>
+                        <i class="fa fa-phone fa-lg "></i>: 011-23385903, 23384874<br>
+                        <i class="fa fa-fax fa-lg "></i>: 011-23385551<br>
+                        <i class="fa fa-envelope fa-lg ">:<a href="mailto:scbaec@gmail.com ">scbaec@gmail.com</a></i>
+                        
+                    </address>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-auto ">
+                    <p>Copyright © 2022 Developed by<br><strong>Nikhil Raj And Ritika Mishra</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous ">
+    </script>
+</body>
+
+</html>
